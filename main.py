@@ -9,7 +9,7 @@ Author: Saroj Bono
 Date:   05/10/2023
 """
 import os
-APIKEY=os.environ['key1']
+APIKEY=os.environ['keyA']
 def before_space(s):
     """
     Returns the substring of s up to, but not including, the first space.
