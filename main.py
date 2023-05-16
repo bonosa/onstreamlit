@@ -9,7 +9,13 @@ Author: Saroj Bono
 Date:   05/10/2023
 """
 import os
-APIKEY=os.environ['keyA']
+
+# Use os.getenv() method which returns None if the environment variable is not present
+APIKEY = os.getenv('keyA')
+
+if APIKEY is None:
+    raise Exception("Couldn't find 'keyA' in the environment variables!")
+
 def before_space(s):
     """
     Returns the substring of s up to, but not including, the first space.
