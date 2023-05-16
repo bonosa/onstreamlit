@@ -10,7 +10,7 @@ Date:   05/10/2023
 """
 
 import streamlit as st
-APIKEY = os.environ["keyA"] #st.secrets["mysecret"]["keyA"]
+APIKEY = st.secrets["mysecret"]["keyAa"]
 
 
 def before_space(s):
