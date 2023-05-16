@@ -8,13 +8,10 @@ in this module is exchange().
 Author: Saroj Bono
 Date:   05/10/2023
 """
-import os
+import osthings_i_like
+import streamlit as st
+APIKEY = st.secrets[mysecret][keyA]
 
-# Use os.getenv() method which returns None if the environment variable is not present
-APIKEY = os.getenv('keyA')
-
-if APIKEY is None:
-    raise Exception("Couldn't find 'keyA' in the environment variables!")
 
 def before_space(s):
     """
