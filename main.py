@@ -8,7 +8,7 @@ in this module is exchange().
 Author: Saroj Bono
 Date:   05/10/2023
 """
-import osthings_i_like
+
 import streamlit as st
 APIKEY = st.secrets[mysecret][keyA]
 
